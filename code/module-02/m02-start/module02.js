@@ -1,14 +1,13 @@
-"use strict";
 /* Module 2: Declare variable types in TypeScript
    Lab start  */
 /*  EXERCISE 1
     TODO: Modify the code to add types to the variable declarations.
     The resulting JavaScript should look the same as the original example when you're done. */
-let firstName;
-let lastName;
-let fullName;
-let age;
-let ukCitizen;
+var firstName;
+var lastName;
+var fullName;
+var age;
+var ukCitizen;
 firstName = 'Rebecca';
 lastName = 'Smith';
 age = 42;
@@ -24,9 +23,9 @@ else {
    TODO: You can use types to ensure operation outcomes. Run the code as is and then modify
    it to have strongly typed variables. Then, address any errors you find so that the result
    returned to a is 12. */
-let x;
-let y;
-let a;
+var x;
+var y;
+var a;
 x = 5;
 y = 7;
 a = x + y;
@@ -44,7 +43,7 @@ var Season;
     Season[Season["Summer"] = 3] = "Summer";
 })(Season || (Season = {}));
 function whichMonths(season) {
-    let monthsInSeason;
+    var monthsInSeason;
     switch (season) {
         case Season.Fall:
             monthsInSeason = "September to November";
@@ -63,9 +62,9 @@ function whichMonths(season) {
 console.log(whichMonths(Season.Spring));
 /* EXERCISE 4
    TODO: Declare the array as the type to match the type of the items in the array. */
-let randomNumbers = [];
-let nextNumber;
-for (let i = 0; i < 10; i++) {
+var randomNumbers = [];
+var nextNumber;
+for (var i = 0; i < 10; i++) {
     nextNumber = Math.floor(Math.random() * (100 - 1)) + 1;
     randomNumbers.push(nextNumber);
 }
